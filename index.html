@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Messenger</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_container">
+
+            <div class="logo">
+                <img  src="./assets/vk.svg" alt="logo" width="35">
+                <h1 class="logo_name">Вконтакте</h1>
+            </div>
+            
+            <input type="text" id="search" placeholder="Search">
+
+            <div class="dropdown_menu">
+                <div class="top-profile-link">
+                    <p class="user_name">Julia</p> 
+                    <img src="./assets/avatar.jpg" class="avatar_mini" alt="avatar_mini">
+                    <img src="./assets/arrow_down.jpg" alt="arrow_down" width="10">
+                </div>    
+                
+                <div class="dropdown-content">
+                        <a class="profile-link" href="#profile">
+                             <img src="./assets/avatar.jpg" class="avatar_mini profile" alt="logo" width="35"> 
+                             <p>Julia Svirid</p> 
+                        </a>
+                        <div class="dropdown-sep"></div>
+                        <a class="dropdown-item">Settings</a>
+                        <a class="dropdown-item">Help</a>
+                        <div class="dropdown-sep"></div>
+                        <a class="dropdown-item">Log out</a>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <nav>
+                    <ol class="sidebar_ol">
+                        <li class="nav-item">
+                            <a href=""><img class="nav-item_icon" src="./assets/user.svg" alt="user-icon" width="20"> My profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href=""><img class="nav-item_icon" src="./assets/messenger.svg" alt="messenger-icon" width="20"> Messenger</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="page-body">
+                <div class="column-wrap">
+                    <div class="page-block photo">
+                        <img src="./assets/avatar.jpg" class="page-photo" alt="big avatar" width="200">
+                        <div class="edit_button">
+                            <button class="edit_button_link">Edit</button>
+                        </div>
+                    </div>
+
+                    <div class="page-block">
+                        <div class="block-name">
+                            <p>Friends</p>
+                            <p class="friends_count">3</pс>
+                        </div>
+                       
+                            <ol class="friends-list">
+                                <li class="friend_card"><img class="avatar_friend profile" src="./assets/vasya.jpeg" alt="Vasya"> Vasya</li>
+                                <li class="friend_card"><img class="avatar_friend profile" src="./assets/petya.jpeg" alt="Petya"> Petya</li>
+                                <li class="friend_card"><img class="avatar_friend profile" src="./assets/jake.jpeg" alt="Jake"> Jake</li>
+                            </ol>
+                        
+                    </div>
+                    <div class="page-block online">
+                        <div class="block-name">
+                            <p>Friends online</p>
+                            <p class="friends_count">1</pс>
+                        </div>
+                            <ol class="friends-list">
+                                <li class="friend_card"><img class="avatar_friend profile" src="./assets/jake.jpeg" alt="Jake"> Jake</li>
+                            </ol>
+                    </div>
+                </div>
+
+                <div class="column-right">
+                    <div class="page-block info">
+                        <div class="page-top">
+                            <div class="page-top_name">
+                                <h1 class="page-name">Julia Svirid</h1>
+                                <p class="profile-online">online</p>
+                            </div>
+                            
+                        <div class="status">
+                            <span class="status-message"> set a status message</span>
+                            <div class="status-editor">
+                                <div class="status-input" contenteditable="true" role="textbox"></div>
+                                <div class="status-music"><input type="checkbox" id="status-checkbox">
+                                    <label for="status-checkbox">Display which track is playing</label>
+                                </div>
+                                <button class="status-save">Save</button>
+                            </div>
+                        
+                        </div>
+                        </div>
+
+                        <div class="profile-info">
+                            <div class="profile-info_row">
+                                <span class="label-left">Birthday:</span>
+                                <span><a href="" class="label-right">March 19</a>, <a href="" class="label-right">2000</a></span>
+                            </div>
+                            <div class="profile-info_row">
+                                <span class="label-left">Current city:</span>
+                                <span><a href="" class="label-right">Minsk</a></span>
+                            </div>
+                            <div class="profile-info_row">
+                                <span class="label-left">Institution:</span>
+                                <span><a href="" class="label-right">BSUIR</a></span>
+                            </div>
+                        </div>
+
+                        <div class="counts-module">
+                            <a href="" class="page_counter">
+                                <div class="count">118</div>
+                                <div class="label">friends</div>
+                            </a>
+                            <a href="" class="page_counter">
+                                <div class="count">145</div>
+                                <div class="label">followers</div>
+                            </a>
+                            <a href="" class="page_counter">
+                                <div class="count">12</div>
+                                <div class="label">photos</div>
+                            </a>
+                            <a href="" class="page_counter">
+                                <div class="count">1700</div>
+                                <div class="label">tracks</div>
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="page-block photos">
+                        <div class="photos-header">
+                            <a href="" class="my-photos_link">My photos <span class="photos-amount">12</span></a>
+                            <a href="" class="map-photos_link">show on map</a>
+                        </div>
+                        <div class="photos-module">
+                            <a href="" class="photo-link"><img class="photo-module" src="./assets/photo (1).jpeg" alt="photo_1"></a>
+                            <a href="" class="photo-link"><img class="photo-module" src="./assets/photo (2).jpeg" alt="photo_1"></a>
+                            <a href="" class="photo-link"><img class="photo-module" src="./assets/photo (3).jpeg" alt="photo_1"></a>
+                            <a href="" class="photo-link"><img class="photo-module" src="./assets/photo (4).jpeg" alt="photo_1"></a>
+                            
+                        </div> 
+                    </div>
+
+                    <div class="page-block post">
+                        <div class="new-post">
+                            <a href=""><img src="./assets/avatar.jpg" class="post-field_image" alt="avatar"></a>
+                                <textarea name="" id="post-field" cols="30" rows="1" placeholder="What's new?"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="page-block wall">
+                        <div class="wall_header">
+                            <ol class="wall_header_list">
+                                <li class="wall_header_item"><a href="">All posts</a></li>
+                                <li class="wall_header_item active"><a href="">My posts</a></li>
+                            </ol>
+                            <img src="./assets/loupe.svg"  class="search_post" alt="search" width="15">
+                        </div>
+                        <div class="wall_content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+
+    
+    <footer class="footer">
+
+    </footer>
+    
+</body>
+</html>
