@@ -12,6 +12,8 @@ body{
 h1,
 h2,
 h3,
+h4,
+h5,
 p,
 a,
 main {
@@ -24,8 +26,21 @@ a {
     color: #2a5885;
 }
 
+
 ol {
     list-style: none;
+}
+
+.blue-button {
+    padding: 7px 16px 8px;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    background: 0 0;
+    background-color: #5181b8;
+    border: 0;
+    border-radius: 4px;
+    color: #ffffff;
 }
 
 .header {
@@ -168,7 +183,6 @@ main {
    margin: 0 auto;
    max-width: 990px;
    width: 100%;
-   height: 1000px;
    display: flex;
    
    
@@ -263,7 +277,6 @@ main {
 
 
 .online {
-    margin-top: 0px;
     border-top: 1px solid  #edeef0;
 }
 
@@ -310,7 +323,7 @@ main {
 }
 
 .page-block.info {
-    width: 100%;
+    
     height: 220px;
     padding: 15px 20px;
     
@@ -482,7 +495,7 @@ main {
 /*Photos*/
 
 .page-block.photos {
-    width: 100%;
+    
     padding: 15px 20px;
 
 }
@@ -540,6 +553,26 @@ main {
     width: 100%;
 }
 
+
+.submit-post {
+    display: none;
+    background: #fafbfc;
+    border-top: 1px solid #e7e8ec;
+    padding: 13px 20px 12px;
+    border-radius: 0 0 4px 4px;
+    
+}
+
+.save-button {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.new-post:hover .submit-post {
+    display: block;
+    
+}
+
 .post-field_image {
     width: 28px;
     height: 28px;
@@ -574,6 +607,8 @@ textarea {
     resize: none;
    
 }
+
+
 
 /*WALL */
 
@@ -611,4 +646,54 @@ textarea {
     padding: 17px 6px 14px;
     margin: 0 4px -1px;
     cursor: pointer;
+}
+
+.post-header {
+    padding: 15px 20px 0;
+    position: relative;
+    min-height: 50px;
+}
+
+.post-header-info {
+    margin-left: 65px;
+    padding-top: 8px;
+}
+
+
+.post-avatar {
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+    display: block;
+}
+
+.post-author {
+    font-weight: 500;
+    font-size: 13px;
+    padding-bottom: 3px;
+}
+
+.post-date-link {
+    color: #939393;
+    font-size: 12.5px;
+}
+
+.wall-text {
+    padding: 8px 20px 20px;
+}
+
+.wall-quote {
+    padding-top: 3px;
+}
+
+.wall-photo {
+    padding: 10px 0 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.wall-photo-style {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
 }
