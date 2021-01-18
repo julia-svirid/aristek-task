@@ -10,7 +10,6 @@
     }
 
     .header {
-        max-width: 769px;
         width: 100%;
     }
 
@@ -33,5 +32,18 @@
         padding-left: 5px;
     }
 
-    
+    .page-body.msg {
+        width: 100%;
+        max-width: 570px;
+    }
+
+    .msg-menu {
+        max-width: 200px;
+        margin-left: 10px;
+    }
+
+    .dialogs-header,
+    .dialogs-footer {
+        max-width: 360px;
+    }
 }
