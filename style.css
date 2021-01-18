@@ -1,11 +1,12 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
+    height: 100%;
   }
 
-  *:focus {
+*:focus {
     outline: none;
 }
 
@@ -27,8 +28,13 @@ a {
 }
 
 
-ol {
+ol,
+ul {
     list-style: none;
+}
+
+.miniature {
+    border-radius: 50%;
 }
 
 .blue-button {
@@ -184,7 +190,7 @@ main {
    max-width: 990px;
    width: 100%;
    display: flex;
-   
+   min-height: 100vh;
    
 }
 
@@ -224,7 +230,7 @@ main {
 }
 
 .page-body {
-    width: 795px;
+    width: 100%;
   
     margin-top: 50px;
     display: flex;
@@ -612,6 +618,10 @@ textarea {
 
 /*WALL */
 
+.page-block.wall {
+    margin-bottom: 15px;
+}
+
 .wall_header {
     display: flex;
     justify-content: space-between;
@@ -688,12 +698,227 @@ textarea {
 
 .wall-photo {
     padding: 10px 0 4px;
-    display: flex;
-    justify-content: center;
 }
 
 .wall-photo-style {
-    width: 100%;
+    width: 90%;
     overflow: hidden;
     object-fit: cover;
+}
+
+.like-wrap {
+    padding: 0 20px;
+}
+
+.like-cont {
+    border-top: 1px solid #e7e8ec;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.like-btns,
+.views {
+    display: flex;
+    align-items: center;
+}
+
+.likes_amount {
+    font-weight: 500;
+    margin-left: 6px;
+    font-size: 15px;
+    line-height: 16px;
+    height: 16px;
+    overflow: hidden;
+    color: #626d7a;
+    white-space: nowrap;
+    padding: 0 3px;
+}
+
+.comment-button,
+.repost-button {
+    margin-left: 21px;
+    padding: 0 3px;
+    
+}
+
+
+.views p{
+    margin-left: 6px;
+    height: 14px;
+    line-height: 15px;
+    color: #818c99;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/*MESSENGER*/
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar.msngr {
+    position: sticky;
+}
+
+.msg-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.msg-dialogs {
+    min-height: 354px;
+    height: auto;
+    margin-top: 15px;
+    width: 550px;
+}
+
+.dialogs-header {
+    position: fixed;
+    width: 100%;
+    max-width: 550px;
+    background: #ffffff;
+    border-radius: 3px 3px 0 0;
+    left: auto;
+    margin-left: -1px;
+    border-left: solid 1px #edeef0;
+    border-right: solid 1px #edeef0;
+    display: flex;
+    border-bottom: 1px solid #e7e8ec;
+}
+
+.search-dialog {
+    padding: 15px 10px 15px 35px;
+    border: none;
+    background: url("./assets/loupe.svg");
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+    flex-grow: 1;
+    
+}
+
+
+.dialogs-content {
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding-top: 48px;
+}
+
+.dialog {
+    padding-left: 20px;
+    height: 71px;
+    cursor: pointer;
+    display: flex;
+}
+
+.dialog:hover {
+    background-color: #f3f5f7;
+}
+
+.dialog-content {
+    padding: 10px 15px 0px 0px;
+    width: 100%;
+    border-bottom: 1px solid #e7e8ec;
+}
+
+.dialog-photo {
+    padding: 11px 14px 8px 0;
+}
+
+.dialog-img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.dialog-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialog-name h5{
+    font-size: 12.5px;
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.dialog-name .msg-time {
+    color: #65656594;
+}
+
+.text-preview {
+    display: flex;
+    color: #656565;
+    line-height: 16px;
+    align-items: center;
+}
+
+.small-img {
+    margin-right: 7px;
+}
+
+
+.msg-menu {
+    height: 100px;
+    margin-bottom: 15px;
+    max-width: 230px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #e7e8ec;
+    margin: 15px 0 0;
+}
+
+.msg-menu-list {
+    padding: 6px 0;
+}
+
+.msg-menu-list li {
+    padding: 0 5px 0 20px;
+    color:#2a5885;
+    line-height: 31px;
+    cursor: pointer;
+    font-size: 12.5px;
+    letter-spacing: 0.015em;
+    
+}
+
+.msg-menu-list li:hover {
+    background-color: #f0f2f5;
+}
+
+.msg-menu-item.selected {
+    padding-left: 18px;
+    border-left: 2px solid #5181b8;
+    background-color: #f0f2f5;
+    color: #000000;
+    font-weight: 500;
+}
+
+.dialogs-footer {
+    width: 550px;
+    max-width: 550px;
+    box-sizing: border-box;
+    position: fixed;
+    font-size: 12.5px;
+    z-index: 102;
+    background: #fff;
+    padding: 16px 20px;
+    border: solid 1px #e7e8ec;
+    vertical-align: bottom;
+    color: #2a5885;
+    bottom: 0;
+}
+
+.dialogs-footer_text:hover {
+    text-decoration: underline;
 }

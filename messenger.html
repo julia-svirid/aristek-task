@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Messenger</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_container">
+
+            <div class="logo">
+                <img  src="./assets/vk.svg" alt="logo" width="35">
+                <h1 class="logo_name">Вконтакте</h1>
+            </div>
+            
+            <input type="text" id="search" placeholder="Search">
+
+            <div class="dropdown_menu">
+                <div class="top-profile-link">
+                    <p class="user_name">Julia</p> 
+                    <img src="./assets/avatar.jpg" class="avatar_mini" alt="avatar_mini">
+                    <img src="./assets/arrow_down.jpg" alt="arrow_down" width="10">
+                </div>    
+                
+                <div class="dropdown-content">
+                        <a class="profile-link" href="#profile">
+                             <img src="./assets/avatar.jpg" class="avatar_mini profile" alt="logo" width="35"> 
+                             <p>Julia Svirid</p> 
+                        </a>
+                        <div class="dropdown-sep"></div>
+                        <a class="dropdown-item">Settings</a>
+                        <a class="dropdown-item">Help</a>
+                        <div class="dropdown-sep"></div>
+                        <a class="dropdown-item">Log out</a>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="sidebar msngr">
+                <nav>
+                    <ol class="sidebar_ol">
+                        <li class="nav-item">
+                            <a href="./index.html"><img class="nav-item_icon" src="./assets/user.svg" alt="user-icon" width="20"> My profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./messenger.html"><img class="nav-item_icon" src="./assets/messenger.svg" alt="messenger-icon" width="20"> Messenger</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="page-body">
+                <div class="msg-content">
+                    <div class="msg-dialogs">
+                        <div class="dialogs-header">
+                            <input type="text" class="search-dialog" placeholder="Search">
+                        </div>
+                        <div class="dialogs-content">
+                            <ul>
+                                <li class="dialog">
+                                    <div class="dialog-photo">
+                                        <img src="./assets/petya.jpeg" class="dialog-img" alt="photo">
+                                    </div>
+                                     
+                                    <div class="dialog-content">
+                                        <div class="dialog-name">
+                                            <h5>Vasya Pupkin</h5>
+                                            <span class="msg-time">2:35 pm</span>
+                                        </div>
+                                        <div class="text-preview">
+                                            <div class="small-img">
+                                                <img src="./assets/avatar.jpg" class="miniature" alt="avatar" width="25">
+                                            </div>
+                                            <div class="sent-msg">
+                                                <span class="message-text">Hi, whats up?</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dialog recieved">
+                                    <div class="dialog-photo">
+                                        <img src="./assets/jake.jpeg" class="dialog-img" alt="photo">
+                                    </div>
+                                     
+                                    <div class="dialog-content">
+                                        <div class="dialog-name">
+                                            <h5>Jake Jackson</h5>
+                                            <span class="msg-time">1:35 pm</span>
+                                        </div>
+                                        <div class="text-preview">
+                                            <div class="sent-msg">
+                                                <span class="message-text">Hello my friend!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dialogs-footer">
+                            <a href="#" class="dialogs-footer_text">Enable sound notifications</a>
+                        </div>
+                    </div>
+                    
+                    <div class="msg-menu">
+                        <ul class="msg-menu-list">
+                            <li class="msg-menu-item selected">All chats</li>
+                            <li>Unread</li>
+                            <li>Starred messages</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
